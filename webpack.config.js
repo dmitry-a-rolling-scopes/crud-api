@@ -19,7 +19,7 @@ export default {
     outputModule: true,
   },
   resolve: {
-    extensions: ['.ts', '.js'],
+    extensions: ['.ts'],
   },
   module: {
     rules: [
