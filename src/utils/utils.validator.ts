@@ -12,9 +12,11 @@ export class Validator {
   ) => {
     return (
       typeof username === 'string' &&
+      username.length &&
       typeof age === 'number' &&
+      age > 0 &&
       Array.isArray(hobbies) &&
-      hobbies.every((hobby) => typeof hobby === 'string')
+      hobbies.every((hobby) => typeof hobby === 'string' && hobby.length)
     );
   };
 }
